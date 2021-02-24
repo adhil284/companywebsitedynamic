@@ -1,0 +1,33 @@
+{% extends "companyapp/base.html" %}
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>PRODUCTS LIST</title>
+    <link rel="stylesheet" href="{% static 'css/people.css' %}">
+</head>
+
+<body>
+    {% block content %}
+    <div class="container">
+        <h1>OUR PREMIUM PRODUCTS</h1>
+        <div class="content">
+            <div class="peoplelist">
+                {% for product in products %}
+                <div class="people">
+                    <div class="peoplelist">
+                        <img src="{{ product.photo.url }}" alt="product image">
+                    </div>
+                    <div class="peoplephoto">{{ photo }}</div>
+                    <div class="peoplename">{{ product.name }}</div>
+                    <div class="peopledesignation">{{ product.price }}</div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    {% endblock %}
+</body>
+
+</html>
