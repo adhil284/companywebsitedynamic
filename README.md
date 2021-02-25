@@ -170,11 +170,11 @@ Publish the website in the given URL.
 ```
 ## OUTPUT:
 
-![output](./static/img/o5.png)
+![output](./static/img/5.png)
 
 ## VALIDATION REPORT
 
-![output](./static/img/o6.png)
+![output](./static/img/6.png)
 
 
 ## RESULT:
